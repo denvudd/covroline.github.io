@@ -1,0 +1,233 @@
+.visit {
+  background: url('../img/visit/visit-bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 200px;
+  padding-top: 200px;
+}
+
+.visit__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.visit__text {
+  padding-top: 50px;
+  max-width: 55%;
+  width: 100%;
+}
+
+.visit__header {
+  color: #FFFFFF;
+}
+
+.visit__subtitle {
+  margin-top: 10px;
+}
+
+.visit__form__inner {
+  max-width: 40%;
+  width: 100%;
+}
+
+.visit__form {
+  background: rgba(255, 255, 255, 0.3);
+  border: 2px solid #FFFFFF;
+  box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(15px);
+  border-radius: 30px;
+  padding: 50px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+    font-size: 30px;
+    line-height: 44px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    @include OswaldBold();
+    margin-bottom: 15px;
+  }
+
+  &__subtitle {
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+    @include OswaldExtraLight();
+    text-transform: uppercase;
+    margin-bottom: 30px;
+  }
+
+  &__input {
+    background: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #FFFFFF;
+    max-width: 50%;
+    width: 100%;
+    margin: 0 auto 30px auto;
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    @include OswaldExtraLight();
+
+    &::placeholder {
+      text-transform: uppercase;
+      font-size: 18px;
+      line-height: 22px;
+      letter-spacing: 0.05em;
+      color: #c4c4c4;
+      @include OswaldExtraLight();
+    }
+
+    &:focus {
+      border-bottom: 2px solid #FFFFFF;
+    }
+  }
+
+  &__submit {
+    background: linear-gradient(81.63deg, #F8A400 0%, #F80B00 80%);
+    box-shadow: 0px 10px 30px rgba(245, 89, 36, 0.75);
+    outline: none;
+    border: none;
+    max-width: 50%;
+    width: 100%;
+    padding: 20px 30px;
+    margin: 0 auto;
+    @include OswaldMedium();
+    font-size: 18px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    transition: 0.2s ease;
+
+    &:hover {
+      box-shadow: 0px 20px 40px #F55924;
+      cursor: pointer;
+    }
+  }
+
+  &__checkbox {
+    max-width: 70%;
+    width: 100%;
+    margin: 30px auto 0 auto;
+  }
+}
+
+.custom-checkbox {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.custom-checkbox+label {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+  text-align: start;
+  text-transform: uppercase;
+}
+
+.custom-checkbox+label::before {
+  content: '';
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 1px solid #000000;
+  border-radius: 2px;
+  margin-right: 10px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+  background: #FFFFFF;
+  transition: 0.2s ease;
+}
+
+.custom-checkbox:checked+label::before {
+  border-color: #0b76ef;
+  background-color: #0b76ef;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+}
+
+.custom-checkbox:not(:disabled):not(:checked)+label:hover::before {
+  border-color: #b3d7ff;
+}
+
+.custom-checkbox:not(:disabled):active+label::before {
+  background-color: #b3d7ff;
+  border-color: #b3d7ff;
+}
+
+.custom-checkbox:focus+label::before {
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.custom-checkbox:focus:not(:checked)+label::before {
+  border-color: #80bdff;
+}
+
+.custom-checkbox:disabled+label::before {
+  background-color: #e9ecef;
+}
+
+@media (max-width: 1200px) {
+  .visit__form__input {
+    max-width: 80%;
+  }
+
+  .visit__form__submit {
+    max-width: 80%;
+  }
+
+  .visit__form__checkbox {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 992px) {
+  .visit__inner {
+    flex-wrap: wrap;
+  }
+
+  .visit__text {
+    margin: 0 auto 50px auto;;
+    text-align: center;
+    max-width: 100%;
+  }
+
+  .visit__form__inner {
+    max-width: 100%;
+  }
+
+  .visit {
+    padding-bottom: 80px;
+  }
+}
+
+@media (max-width: 576px) {
+  .visit__form {
+    padding: 35px;
+  }
+
+  .visit__form__input {
+    max-width: 100%;
+  }
+
+  .visit__form__submit {
+    max-width: 100%;
+  }
+
+  .visit__form__checkbox {
+    max-width: 100%;
+  }
+
+  .visit {
+    padding-bottom: 70px;
+  }
+}

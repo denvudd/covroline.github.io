@@ -1,0 +1,21 @@
+/* Шрифты */
+@import 'blocks/fonts';
+/* Настройки интерфейса */
+@import 'blocks/interface';
+/* Настройки сетки */
+@import 'blocks/grid';
+
+
+
+/* Шапка */
+@import 'blocks/header';
+/* Интро секция */
+@import 'blocks/intro';
+/* Секция с видео */
+@import 'blocks/section-video';
+/* Секция выбора */
+@import 'blocks/selection';
+/* Секция с вызовом эксперта */
+@import 'blocks/visit';
+/* Секция с образцами */
+@import 'blocks/samples'

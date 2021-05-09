@@ -1,0 +1,86 @@
+.selection {
+  background: #000000;
+}
+
+.selection__header {
+  color: #FFFFFF;
+}
+
+.selection__cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.selection__card {
+  margin-right: 18px;
+  margin-left: 18px;
+  margin-bottom: 50px;
+  max-width: 270px;
+  width: 100%;
+
+  &__img {
+    max-width: 270px;
+    width: 100%;
+  }
+
+  &__panel {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+
+    &__name {
+      text-transform: uppercase;
+      font-size: 18px;
+      line-height: 22px;
+      @include MontserratBold();
+      color: #FFFFFF;
+    }
+
+    &__link {
+      display: flex;
+      align-items: center;
+      color: #FFFFFF;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    &__svg {
+      max-width: 18px;
+      max-height: 12px;
+      width: 100%;
+      height: 100%;
+
+      img {
+        max-width: none;
+      }
+    }
+
+    &__view {
+      color: #FFFFFF;
+      font-size: 10px;
+      line-height: 24px;
+      text-transform: uppercase;
+      margin-left: 10px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .selection__cards {
+    justify-content: center;
+  }
+
+  .selection__card {
+    margin: 25px auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .selection__cards {
+    margin-top: 20px;
+  }
+}
