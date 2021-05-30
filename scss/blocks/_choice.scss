@@ -1,0 +1,244 @@
+.choice {
+  background: url('../img/choice/choice-bg.jpg');
+  background-size: cover;
+}
+
+.choice__header {
+  color: #FFFFFF;
+}
+
+.choice__title {
+  color: #FFFFFF;
+  font-size: 30px;
+}
+
+.choice__subtitle {
+  color: #FFFFFF;
+  font-size: 21px;
+}
+
+.choice__inner {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.choice__item {
+  margin-left: 50px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: row;
+  max-width: 305px;
+  max-height: 90px;
+  width: 100%;
+  height: 100%;
+
+  &:first-of-type {
+    margin-left: 0;
+  }
+
+  &__num {
+    font-size: 50px;
+    line-height: 61px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    @include MontserratLight();
+    margin-right: 10px;
+  }
+
+  &__photo {
+    max-width: 90px;
+    max-height: 90px;
+    width: 100%;
+    height: 100%;
+    margin-right: 10px;
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    position: relative;
+
+    &__name {
+      font-size: 24px;
+      line-height: 36px;
+      @include OswaldLight();
+      margin-bottom: 5px;
+    }
+
+    &__type {
+      font-size: 12px;
+      line-height: 15px;
+      @include MontserratBold();
+      margin-bottom: 7px;
+    }
+
+    &__button {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+
+      button {
+        display: flex;
+        justify-content: flex-start;
+        text-align: start;
+        background: transparent;
+        color: #FFFFFF;
+        border: none;
+        outline: none;
+        font-size: 10px;
+        line-height: 12px;
+        padding: 0;
+        text-transform: uppercase;
+        text-decoration: underline;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+.choice__form {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: flex;
+
+
+  &__label {
+    margin-right: 30px;
+  }
+
+  &__input {
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: #707070 solid 1px;
+    max-width: 190px;
+    width: 100%;
+    color: #FFFFFF;
+    font-size: 21px;
+    @include OswaldLight();
+
+    &::placeholder {
+      color: #707070;
+      text-transform: uppercase;
+      font-size: 21px;
+      @include OswaldLight();
+    }
+  }
+
+  &__button__inner {
+    display: flex;
+  }
+
+  &__button {
+    border: none;
+    outline: none;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    @include OswaldMedium();
+    font-size: 15px;
+    padding: 10px 30px;
+    background: linear-gradient(81.63deg, #F8A400 0%, #F80B00 80%);
+    box-shadow: 0px 10px 30px rgba(245, 89, 36, 0.75);
+    transition: 0.2s ease;
+
+    &:hover {
+      text-decoration: underline;
+      cursor: pointer;
+      box-shadow: none;
+    }
+  }
+}
+
+.choice__btn--additional__inner {
+  display: flex;
+}
+
+.choice__btn--additional {
+  padding: 11px 30px;
+  background: transparent;
+  border: 1px solid #FFFFFF;
+  outline: none;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  @include MontserratRegular();
+
+  &:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+  &__text {
+    font-size: 12px;
+    margin-right: 10px;
+  }
+
+  &__phone {
+    font-size: 14px;
+    font-weight: bold;
+  }
+}
+
+@media (max-width: 992px) {
+  .choice__item {
+    &:first-of-type {
+      margin-left: 50px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .choice__inner {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .choice__item {
+    margin-right: auto;
+    margin-left: auto;
+
+    &:first-of-type {
+      margin-left: auto;
+    }
+  }
+
+  .choice__form {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+    &__label {
+      margin-bottom: 30px;
+    }
+
+    &__input {
+      max-width: 100%;
+      width: 100%;
+    }
+
+    &__button__inner {
+      justify-content: center;
+    }
+  }
+
+  .choice__btn--additional__inner {
+    justify-content: center;
+  }
+
+  .choice__btn--additional {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    &__text {
+      margin-right: 0;
+    }
+  }
+}

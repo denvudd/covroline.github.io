@@ -1,0 +1,98 @@
+.projects {
+  background: #FFFAEC;
+}
+
+.projects__header {
+  color: #000000;
+}
+
+.projects__panel__counter {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 50px;
+}
+
+.projects__next {
+  background: transparent;
+  outline: none;
+  border: none;
+}
+
+.projects__prev {
+  background: transparent;
+  outline: none;
+  border: none;
+}
+
+.projects__slider {
+  margin-top: 30px;
+
+  .slick-list {
+    overflow: hidden;
+  }
+
+  .slick-track {
+    display: flex;
+  }
+
+  &__page {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.projects__item {
+  max-width: 580px;
+  width: 100%;
+  margin-right: 15px;
+  margin-left: 15px;
+
+  &__photo {
+    img {
+      max-width: 580px;
+      width: 100%;
+    }
+  }
+
+  &__text {
+    margin-top: 10px;
+    color: #000000;
+  }
+
+  &__title {
+    text-transform: uppercase;
+    @include MontserratBold();
+    font-size: 21px;
+  }
+
+  &__description {
+    margin-right: 5px;
+    font-size: 15px;
+    @include MontserratRegular();
+  }
+}
+
+.seo {
+  margin-top: 50px;
+}
+
+.seo__header {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  color: #000000;
+}
+
+.seo__text {
+  color: #000000;
+  text-transform: uppercase;
+  @include MontserratRegular();
+  font-size: 14px;
+  p {
+    padding-block-end: 1em;
+    padding-block-start: 1em;
+  }
+}
+
+@media (max-width: 992px) {
+  
+}

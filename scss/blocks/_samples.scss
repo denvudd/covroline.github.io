@@ -72,6 +72,10 @@
       background-color: #000000;
       color: transparent;
     }
+
+    &:hover {
+      cursor: pointer;
+    }
   }
 }
 
@@ -114,10 +118,544 @@
   @include OswaldLight();
 }
 
+.samples__vors {
+  margin-top: 50px;
+}
+
+.vors__header {
+  margin-bottom: 30px;
+}
+
+.vors__inner {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  min-width: 0;
+
+  .slick-list {
+    overflow: hidden;
+  }
+
+  .slick-track {
+    display: flex;
+  }
+}
+
+.vors__item {
+  max-width: 218px;
+  width: 100%;
+  margin-right: 25px;
+  min-width: 0;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &__text {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__name {
+    @include MontserratBold();
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+  }
+
+  &__panel {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+
+    &__choice {
+      button {
+        background: transparent;
+        border: 1px solid #000000;
+        text-transform: uppercase;
+        max-width: 100%;
+        width: 100%;
+        height: 100%;
+        @include MontserratMedium();
+        font-size: 13px;
+        padding: 5px 10px;
+        transition: 0.2s ease;
+
+        &:focus {
+          background: url('../img/svg/check-btn.svg') 50% 50%;
+          background-size: 20%;
+          background-repeat: no-repeat;
+          background-color: #000000;
+          color: transparent;
+        }
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+
+    &__view {
+      display: flex;
+      align-items: center;
+      margin-left: 25px;
+
+      img {
+        max-width: 18px;
+        max-height: 12px;
+        width: 100%;
+        height: 100%;
+        margin-right: 5px;
+      }
+
+      p {
+        @include MontserratRegular();
+        text-transform: uppercase;
+        font-size: 10px;
+        color: #000000;
+        line-height: 24px;
+      }
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.samples__basis {
+  margin-top: 50px;
+}
+
+.basis__header {
+  margin-bottom: 30px;
+}
+
+.basis__inner {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.basis__item {
+  max-width: 585px;
+  width: 100%;
+  margin-right: 20px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &__text {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__name {
+    @include MontserratBold();
+    font-size: 15px;
+    line-height: 15px;
+    text-transform: uppercase;
+  }
+
+  &__panel {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+
+    &__choice {
+      button {
+        background: transparent;
+        border: 1px solid #000000;
+        text-transform: uppercase;
+        max-width: 100%;
+        width: 100%;
+        height: 100%;
+        @include MontserratMedium();
+        font-size: 13px;
+        padding: 5px 10px;
+        transition: 0.2s ease;
+
+        &:focus {
+          background: url('../img/svg/check-btn.svg') 50% 50%;
+          background-size: 20%;
+          background-repeat: no-repeat;
+          background-color: #000000;
+          color: transparent;
+        }
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+
+    &__view {
+      display: flex;
+      align-items: center;
+      margin-left: 25px;
+
+      img {
+        max-width: 18px;
+        max-height: 12px;
+        width: 100%;
+        height: 100%;
+        margin-right: 5px;
+      }
+
+      p {
+        @include MontserratRegular();
+        text-transform: uppercase;
+        font-size: 10px;
+        color: #000000;
+        line-height: 24px;
+      }
+
+      &:hover {
+        text-decoration: underline;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.samples__picture {
+  margin-top: 50px;
+}
+
+.picture__header {
+  margin-bottom: 30px;
+}
+
+.picture__inner {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.picture__item {
+  max-width: 585px;
+  width: 100%;
+  margin-right: 20px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &__text {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__name {
+    @include MontserratBold();
+    font-size: 15px;
+    line-height: 15px;
+    text-transform: uppercase;
+  }
+
+  &__panel {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+
+    &__choice {
+      button {
+        background: transparent;
+        border: 1px solid #000000;
+        text-transform: uppercase;
+        max-width: 100%;
+        width: 100%;
+        height: 100%;
+        @include MontserratMedium();
+        font-size: 13px;
+        padding: 5px 10px;
+        transition: 0.2s ease;
+
+        &:focus {
+          background: url('../img/svg/check-btn.svg') 50% 50%;
+          background-size: 20%;
+          background-repeat: no-repeat;
+          background-color: #000000;
+          color: transparent;
+        }
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+
+    &__view {
+      display: flex;
+      align-items: center;
+      margin-left: 25px;
+
+      img {
+        max-width: 18px;
+        max-height: 12px;
+        width: 100%;
+        height: 100%;
+        margin-right: 5px;
+      }
+
+      p {
+        @include MontserratRegular();
+        text-transform: uppercase;
+        font-size: 12px;
+        color: #000000;
+        line-height: 24px;
+      }
+
+      &:hover {
+        text-decoration: underline;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.samples__edging {
+  margin-top: 50px;
+}
+
+.edging__header {
+  margin-bottom: 30px;
+}
+
+.edging__inner {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.edging__item {
+  max-width: 218px;
+  width: 100%;
+  margin-right: 25px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &__text {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__name {
+    @include MontserratBold();
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+  }
+
+  &__panel {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+
+    &__choice {
+      button {
+        background: transparent;
+        border: 1px solid #000000;
+        text-transform: uppercase;
+        max-width: 100%;
+        width: 100%;
+        height: 100%;
+        @include MontserratMedium();
+        font-size: 13px;
+        padding: 5px 10px;
+        transition: 0.2s ease;
+
+        &:focus {
+          background: url('../img/svg/check-btn.svg') 50% 50%;
+          background-size: 20%;
+          background-repeat: no-repeat;
+          background-color: #000000;
+          color: transparent;
+        }
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+
+    &__view {
+      display: flex;
+      align-items: center;
+      margin-left: 25px;
+
+      img {
+        max-width: 18px;
+        max-height: 12px;
+        width: 100%;
+        height: 100%;
+        margin-right: 5px;
+      }
+
+      p {
+        @include MontserratRegular();
+        text-transform: uppercase;
+        font-size: 10px;
+        color: #000000;
+        line-height: 24px;
+      }
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.samples__stacking {
+  margin-top: 50px;
+}
+
+.stacking__header {
+  margin-bottom: 30px;
+}
+
+.stacking__inner {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.stacking__item {
+  max-width: 380px;
+  width: 100%;
+  margin-right: 25px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &__text {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__name {
+    @include MontserratBold();
+    font-size: 15px;
+    line-height: 15px;
+    text-transform: uppercase;
+  }
+
+  &__panel {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+
+    &__choice {
+      button {
+        background: transparent;
+        border: 1px solid #000000;
+        text-transform: uppercase;
+        max-width: 100%;
+        width: 100%;
+        height: 100%;
+        @include MontserratMedium();
+        font-size: 13px;
+        padding: 5px 10px;
+        transition: 0.2s ease;
+
+        &:focus {
+          background: url('../img/svg/check-btn.svg') 50% 50%;
+          background-size: 20%;
+          background-repeat: no-repeat;
+          background-color: #000000;
+          color: transparent;
+        }
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+
+    &__view {
+      display: flex;
+      align-items: center;
+      margin-left: 25px;
+
+      img {
+        max-width: 18px;
+        max-height: 12px;
+        width: 100%;
+        height: 100%;
+        margin-right: 5px;
+      }
+
+      p {
+        @include MontserratRegular();
+        text-transform: uppercase;
+        font-size: 10px;
+        color: #000000;
+        line-height: 24px;
+      }
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+
 @media (max-width: 1200px) {
   .samples__colors__panel__title {
     max-width: 80%;
     width: 100%;
+  }
+  
+
+  .vors__item {
+    margin-bottom: 23px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .basis__item {
+    margin-bottom: 23px;
+    max-width: 435px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .picture__item {
+    margin-bottom: 23px;
+    max-width: 450px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .edging__item {
+    margin-bottom: 23px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .stacking__item {
+    margin-bottom: 23px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -140,6 +678,26 @@
   .samples__colors__panel {
     padding-right: 0;
   }
+
+  .vors__item {
+    max-width: 205px;
+  }
+
+  .basis__item {
+    max-width: 45%;
+  }
+
+  .picture__item {
+    max-width: 45%;
+  }
+
+  .edging__item {
+    max-width: 205px;
+  }
+
+  .stacking__item {
+    max-width: 325px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -154,5 +712,33 @@
 
   .samples__colors__slider__page {
     justify-content: center;
+  }
+
+  .basis__item {
+    max-width: 100%;
+    margin-right: 0;
+  }
+
+  .picture__item {
+    max-width: 100%;
+    margin-right: 0;
+  }
+
+  .vors__inner {
+    justify-content: center;
+  }
+
+  .vors__item {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .edging__inner {
+    justify-content: center;
+  }
+
+  .edging__item {
+    margin-right: 0;
+    margin-left: 0;
   }
 }
